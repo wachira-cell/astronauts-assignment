@@ -12,6 +12,6 @@ public class excersises {
        // Twin 2
        String firstName2 = "Kinyanjui";
        String email2 = "kinyanjui.maingi@spaceuniversity.com";
-       System.out.print();
+       System.out.println();
    }
 }
