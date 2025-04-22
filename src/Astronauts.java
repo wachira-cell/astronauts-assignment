@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Astronauts {
     public static void main(String[] args) {
         int person=5;
@@ -51,6 +53,18 @@ public class Astronauts {
         double alpha_jump=height*h;
         boolean can_jump=alpha_jump > shipHeight;
         System.out.println(can_jump);
+        Scanner sc=new Scanner(System.in);
+        System.out.print("HOW MANY PLANETS ARE IN THE SOLAR SYSTEM? ");
+        Scanner scanner;
+        int answer = scanner.nextInt();
+        if(answer==8) {
+            System.out.println("YES");
+    } else {
+        System.out.println("NO");
+    }
+        scanner.close();
+
+
 
 
 
