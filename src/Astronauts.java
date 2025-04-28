@@ -63,6 +63,48 @@ public class Astronauts {
         System.out.println("NO");
     }
         scanner.close();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("HOW MANY PLANETS ARE IN THE SOLAR SYSTEM? ");
+        int answer = scanner.nextInt();
+        if (answer == 8) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+
+        scanner.close();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of students: ");
+        int numberOfStudents = scanner.nextInt();
+        if (numberOfStudents % 2 == 0) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+        scanner.close();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of students: ");
+        int numberOfStudents = scanner.nextInt();
+        String result = (numberOfStudents % 2 == 0) ? "YES" : "NO";
+        System.out.println(result);
+
+        scanner.close();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the radius (r): ");
+        double r = scanner.nextDouble();
+        System.out.print("Enter the x coordinate: ");
+        double x = scanner.nextDouble();
+
+        System.out.print("Enter the y coordinate: ");
+        double y = scanner.nextDouble();
+        double distance = Math.sqrt(x * x + y * y);
+        String zone = (distance < r) ? "green zone" :
+                (distance == r) ? "yellow zone" :
+                        "zone of death";
+
+        System.out.println(zone);
+
+        scanner.close();
 
 
 
