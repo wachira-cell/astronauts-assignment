@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Astronauts {
+public class project {
     public static void main(String[] args) {
         int person=5;
         int crew;
@@ -105,6 +105,39 @@ public class Astronauts {
         System.out.println(zone);
 
         scanner.close();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of applicants: ");
+        int a = scanner.nextInt();
+        System.out.print("Enter the number of cups: ");
+        int c = scanner.nextInt();
+        double cupsPerApplicant = (double) c / a;
+        System.out.println("Each applicant can get " + cupsPerApplicant + " cups.");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the amount of lunar soil (kg): ");
+        int m = scanner.nextInt();
+        System.out.print("Enter the number of guests: ");
+        int g = scanner.nextInt();
+        float soilPerGuest = (float) m / (float) g;
+        System.out.println("Each guest gets " + soilPerGuest + " kg of lunar soil.");
+        int num = 70;
+        char character = (char) num;
+        System.out.println("The character corresponding to integer " + num + " is: " + character);
+        char s = 'S';
+        char o = 'O';
+        int signalValue = (int) s + (int) o + (int) s;
+        System.out.println("The numerical equivalent of the SOS signal is: " + signalValue);
+        String[] binaryStrings = {
+                "01001000",
+                "01100101",
+                "01101100",
+                "01101100",
+                "01101111"
+        };
+        for (String binary : binaryStrings) {
+            char character = (char) Integer.parseInt(binary, 2); // Convert binary to integer, then to char
+            System.out.print(character);
+        }
+
 
 
 
