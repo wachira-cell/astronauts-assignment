@@ -3,20 +3,12 @@ import java.util.Scanner;
 public class WeekdayChecker {
 
     public static String checkDayType(String day) {
-        // Use switch statement to determine if the day is a work day or a weekend
-        switch (day.toLowerCase()) {
-            case "monday":
-            case "tuesday":
-            case "wednesday":
-            case "thursday":
-            case "friday":
-                return "work day";
-            case "saturday":
-            case "sunday":
-                return "weekend";
-            default:
-                return "wrong day of the week name";
-        }
+        // Use a switch expression with lambda syntax to determine work day or weekend
+        return switch (day.toLowerCase()) {
+            case "monday", "tuesday", "wednesday", "thursday", "friday" -> "work day";
+            case "saturday", "sunday" -> "weekend";
+            default -> "wrong day of the week name";
+        };
     }
 
     public static void main(String[] args) {
